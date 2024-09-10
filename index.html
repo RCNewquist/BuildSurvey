@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mini Orgelwerx Survey</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--TODO: Complete h1 heading-->
+        <h1 id="title">Mini Orgelwerx Survey Form</h1>
+
+        <!--TODO: Complete p description-->
+        <p id="description"  >
+            Welcome to the Mini Orgelwerx Community!
+        </p>
+        <p class="explain"> 
+            To assist you in finding areas that interests you, please complete the new members survey.
+        </p>
+        <p class="explain center-align">
+            In the meantime, may all your dreams be pipe dreams!
+        </p>
+
+        <!--TODO: Tool the form-->
+        
+        <form id="survey-form" 
+              name="survey-form"
+              action="https://survey-form.freecodecamp.rocks"
+              method="post">
+            
+              <!--TODO: Name input-->
+            <label id="name-label" for="name">Name: 
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </label>
+            
+            <!--TODO: Email address-->
+            <label id="email-label" for="email">Email: 
+                 <input id="email" 
+                        name="email" 
+                        type="email" 
+                        placeholder="Enter your email" 
+                        required>
+            </label>
+
+            <!--TODO: Number of years playing organ-->
+            <label id="number-label" for="number">Years Playing Organ 
+                <input id="number" 
+                        name="number" 
+                        type="number" 
+                        min="2" 
+                        max="20" 
+                        placeholder="2-20"></input>
+            </label>
+
+            <!--TODO: Organ preferences-->
+            <label id="dropdown" for="dropdown">Preferred Type of Organ
+                <select id="dropdown" name="organ-select">
+                    <option value="">Select One</option>
+                    <option value="pipe">Pipe Organ</option>
+                    <option value="theater">Theater Organ</option>
+                    <option value="virtual">Virtual Organ</option>
+                </select>
+            </label>
+
+            <!-- TODO: Complete radio buttons group 1-->
+             <fieldset id="fieldset-radio1" 
+                        name="fieldset-radio1">
+                <legend l>Do you teach organ?</legend>
+                <label for="radio1" id="label-radio1">
+                    <input type="radio"
+                        id="radio1"
+                        name="radio-group1"
+                        checked>Yes, I teach</label>
+                <label for="radio2">
+                    <input type="radio"
+                        id="radio2"
+                        name="radio-group1">No, I do not teach</label>
+            </fieldset>
+
+            <fieldset id="favorite-stops" 
+                      name="favorite-stops">
+                <legend>Pick Your Favorite Stops</legend>
+                
+                <label for="principal-16"
+                        name="label-principal-16"
+                       >
+                </label>
+                <input type="checkbox"
+                   id="principal-16"
+                   name="principal-16">Principal 16'</input>
+                
+                <label for="principal-8"
+                       name="label-principal-8"
+                       class="drop-inline">
+                </label>
+                <input type="checkbox"
+                   id="principal-8"
+                   name="principal-8"
+                   class="drop-inline">Principal 8'</input>
+
+                <label for="principal-4"
+                       name="label-principal-4"
+                       class="drop-inline"
+                       ></label>
+                <input type="checkbox"
+                   id="principal-4"
+                   name="principal-4">Principal 4'</input>
+                       
+                <label for="principal-2"
+                       name="label-principal-2"
+                       class="drop-inline">
+                       </label>
+                <input type="checkbox"
+                   id="principal-2"
+                   name="principal-2">Principal 2'</input>
+
+                <label for="bourdon-16"
+                       name="label-bourdon-16"
+                       >
+                       </label>
+                    <input type="checkbox"
+                        id="bourdon-16"
+                        name="bordon-16">Bourdon 16'</input>
+                 
+                <label for="bourdon-8"
+                        name="label-bourdon-8"
+                        class="drop-inline">
+                    <input type="checkbox"
+                        name="bourdon-8"></input>Bourdon 8'</label> 
+
+                <label for="bourdon-4"
+                        name="label-bourdon-4"
+                        class="drop-inline">
+                    <input type="checkbox"
+                            name="bourdon-4"></input>Bourdon 4'</label>  
+
+                <label for="bourdon-2"
+                        name="label-bourdon-2"
+                        class="drop-inline">
+                    <input type="checkbox"
+                        id="bourdon-2"
+                        name="bourdon-2"></input>Bourdon 2'</label>
+            </fieldset>
+
+            <!--TODO: Comments-->
+            <label for="comments" id="comments-label">Comments             
+            <input type="textarea" 
+                      id="comments" 
+                      name="comments" 
+                      placeholder="Enter your comments here"
+                      rows="8"
+                      cols="40"></input>
+            
+            <!--TODO: Complete submit button-->
+            <br />
+            <input id="submit" 
+                   type="submit" 
+                   value="Submit">
+        </form>
+    </body>

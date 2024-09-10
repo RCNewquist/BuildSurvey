@@ -1,0 +1,37 @@
+body {
+
+    max-width: 600px;
+    max-height: 500px;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+h1 {
+    text-align: center;
+    color:blueviolet;
+}
+
+p#description {
+    text-align:center;
+    margin: 3% auto 1% auto ;
+    border: 3px solid blueviolet;
+}
+
+p#center-align {
+    text-align: center;
+    /*border: 3px solid gradient-radial(yellow, green); */
+}
+
+label {
+    display: block;
+    border: 0 5px 5px 5px;
+    padding: 5px;
+}
+
+.drop-inline {
+    display: inline;
+}
+
+.drop-block {
+    display: block;
+}   
